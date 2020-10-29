@@ -39,7 +39,7 @@ class CityListTest {
 
         assertEquals(2, cityList.countCities());
         assertTrue(cityList.hasCity(new City("Regina", "Saskatchewan")));
-        assertEquals("Saskatchewan", cityList.getLongestCityName());
+        assertEquals("Edmonton", cityList.getLongestCityName());
     }
 
 

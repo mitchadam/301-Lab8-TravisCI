@@ -86,7 +86,6 @@ public class CityList {
                 index = i; elementLength = cities.get(i).getCityName().length();
             }
         }
-//        return cities.get(index).getCityName();
-        return "";
+        return cities.get(index).getCityName();
     }
 }
