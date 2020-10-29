@@ -77,4 +77,15 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    public String getLongestCityName() {
+        int index = 0;
+        int elementLength = cities.get(0).getCityName().length();
+        for(int i=1; i< cities.size(); i++) {
+            if(cities.get(i).getCityName().length() > elementLength) {
+                index = i; elementLength = cities.get(i).getCityName().length();
+            }
+        }
+        return cities.get(index).getCityName();
+    }
 }
